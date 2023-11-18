@@ -1,7 +1,7 @@
 ﻿@page "/"
 @* @attribute [StreamRendering] *@
 <PageTitle>Home</PageTitle>
-<EditForm Model="MyFormModel" OnSubmit=OnOK FormName="myFormName">
+<EditForm Model="MyFormModel" data-enhance OnSubmit=OnOK FormName="myFormName">
     <InputText @bind-Value=MyFormModel.Name />
     <button type="submit" @onclick=OnOK>OnOK</button>
 </EditForm>
